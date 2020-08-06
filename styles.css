@@ -1,0 +1,122 @@
+.container {
+    width: 75vw;
+    height: 94vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 538px 1fr;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 2px;
+}
+
+.photo-1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    background-image: url("/photos/pic-1.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    position: relative;
+}
+
+.nav {
+    position: relative;
+    width: 975px;
+    height: 36px;
+    margin: 0 auto;
+    top: 85px;
+    border-radius: 5px;
+    /* background: linear-gradient( #666, color-stop #5e5e5e , #707070); */
+    /* background: linear-gradient(to top, #666, #5e5e5e 50%,#707070 51% ,#808080); */
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))),
+    -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))),
+    url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHVQTFRFAAAA%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F5YtmQAAAACd0Uk5TAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmZiD6WAAAAdlJREFUeF7t3btuFEEQheFzunotGYkIERA4spn3fyeHiAgEEtsXB82s2eEJavR%2F0Wjyo75XWfHpw4MkSXNqCkA2lr2%2B%2Fvz63n15qpI0x5yTSAM52XaxJLVXf%2FkoaY6xQk2sgXy8Ql2KJf3wS5HG6HMMQg3kZNkuxVGKNLxJo48%2BxhxTpBrIx7JcXEqUKJI3zd77CjWLaiAle4U6Iixv6q33MfocTL%2BBlCy7OEqJqCFvs%2FV2m3%2BTaiAd6zb7rlHtrbc1VA%2Bm30BSa%2B%2B7RNSo4a21thbVTL%2BBnCy7rCV1rdXbtbXW%2B%2Bh%2Ft78BZLM2v6NE1Fov%2FrpC3Zl%2BA2l5H6lrrRe%2FXNu%2BqCbUQE57qGvsoW5t9D4H028gJculOKLUWuvFz%2B16O9NipAZSsm8nWpfq53ZlTQ3k9s%2BamlADZ0CogZMh1MDJEGrgZAg1cDL%2Fh5ojLSC1%2ByMtLp8A2R0un3BNFEjv%2FpooDzqA9O4fdPD0Esju8PSSIglAdsciCZQzArI7lDOat30yCg8CGe2FB1eovZcI7oMSwUBSq0TwWlQHxfyBEzgW86ftDpDase0ODfKA7A4N8mhlC2R318r2px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC') no-repeat 50% 50%,
+    -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    align-items: center;
+}
+
+.nav div {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid black;
+    color: white;
+}
+
+.photo-2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background-image: url("/photos/pic-2.jpg");
+    background-repeat: no-repeat;
+}
+
+.photo-3 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background-image: url("/photos/pic-3.jpg");
+    background-repeat: no-repeat;
+}
+
+.photo-4 {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    background-image: url("/photos/pic-4.jpg");
+    background-repeat: no-repeat;
+}
+
+.photo-5 {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    background-image: url("/photos/pic-5.jpg");
+    background-repeat: no-repeat;
+}
+
+footer {
+    width: 980px;
+    margin: 25px auto;
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #6E6E6E;
+}
+
+footer span {
+    color: #08C
+}
+
+footer span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.right {
+    margin: 0 0 0 15px;
+}
+
+.right span {
+    padding: 0 5px;
+    border-right: 1px solid #ccc;
+}
+
+.right img {
+    position: absolute;
+    padding-left: 7px;
+    transform: translateY(-4px);
+}
+
+.bottom {
+    padding: 15px 0 0 0;
+}
+
+.bottom span {
+    padding-right: 7px;
+}
+
+.bottom #one {
+    border-right: 1px solid #ccc;
+}
+
+.bottom #two {
+    padding-left: 2px;
+}
